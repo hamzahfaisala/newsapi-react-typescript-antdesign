@@ -1,0 +1,29 @@
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header.header{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+h2.ant-typography{
+  color: #fff !important;
+}
+
+.light-mode header.header{
+  background: #2970b8;
+} 
+
+.container .content{
+  flex: 1;
+  overflow: auto;
+  min-height: calc(100vh - var(--header-height));
+  max-height: calc(100vh - var(--header-height));
+}
